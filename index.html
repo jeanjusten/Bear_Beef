@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEAR BEEF</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="Lib/bootstrap.min.css">
+</head>
+
+<body id="body">
+    <!--NAVBAR ACTIVE LINK SPY-->
+    <header id="header-nav">
+        <div class="navbar navbar-dark navbar-expand-lg">
+            <div class="container">
+                <img src="./images/bearbeef_claw.png" id="claw-logo" draggable="false">
+                <img src="./images/bearbeef_logo_solo_png.png" id="claw-logo" draggable="false">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-dropdown">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu-dropdown">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link active">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#sobre" class="nav-link">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#cardapio" class="nav-link">Cardápio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contato" class="nav-link">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!--NAV TABS-->
+    <div data-bs-spy="scroll" data-bs-target="#header-nav">
+        <!--MAIN SECTION-->
+        <section id="home">
+            <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+            
+            <div class="carousel-inner">
+                <div class="carousel-item active c-item">
+                    <img src="./images/fd-02.jpg" draggable="false" alt="Imagem de um prato com carne" class="d-block w-100 c-img" alt="Slide 1">
+                    <div class="carousel-caption top-0 mt-4">
+                        <img src="./images/bearbeef_claw.png" draggable="false" class="img-claw-main">
+                        <p class="mt-5 fs-3 mb-0 carousel-txt">Deu água na boca né?</p>
+                        <h1 class="display-1 fw-bolder text-capitalize carousel-txt">BEAR BEEF</h1>
+                        <button class="btn btn-primary px-4 py-2 fs-5 mt-1">Peça Agora</button>
+                    </div>
+                </div>
+                <div class="carousel-item c-item">
+                    <img src="./images/fd-00.jpg" draggable="false" alt="Imagem de um prato com carne" class="d-block w-100 c-img" alt="Slide 2">
+                    <div class="carousel-caption top-0 mt-4">
+                        <p class="text-uppercase fs-3 mt-5 mb-0 carousel-txt">The season has arrived</p>
+                        <p class="display-1 fw-bolder text-capitalize">3 available tours</p>
+                        <!--<button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                        data-bs-target="#booking-modal">Ver mais</button>-->
+                    </div>
+                </div>
+                <div class="carousel-item c-item">
+                    <img src="./images/fd-03.jpg" draggable="false" alt="Imagem de um prato com carne" class="d-block w-100 c-img" alt="Slide 3">
+                    <div class="carousel-caption top-0 mt-4">
+                        <p class="text-uppercase fs-3 mt-5 mb-0 carousel-txt">Destination activities</p>
+                        <p class="display-1 fw-bolder text-capitalize">Go glacier hiking</p>
+                        <!--<button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                        data-bs-target="#booking-modal">Ver mais</button>-->
+                    </div>
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!--Section Curve-->
+            <div class="custom-shape-divider-bottom-1725920085">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+                </svg>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <div class="container">
+                <h2 class="mt-5 pt-5">SOBRE A BEAR BEEF</h2>
+            </div>
+        </section>
+
+        <!--Section Cardápio-->
+        <section id="cardapio">
+            <!--Section Curve-->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#F15D07" fill-opacity="1" d="M0,128L60,160C120,192,240,256,360,250.7C480,245,600,171,720,154.7C840,139,960,181,1080,192C1200,203,1320,181,1380,170.7L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+            </svg>
+            <div class="container">
+                <h2 class="">CARDÁPIO</h2>
+                <nav class="nav nav-tabs">
+                    <button data-bs-toggle="tab" data-bs-target="#tab1" class="nav-link active" type="button">Pratos Especiais</button>
+                    <button data-bs-toggle="tab" data-bs-target="#tab2" class="nav-link" type="button">Bebidas</button>
+                    <button data-bs-toggle="tab" data-bs-target="#tab3" class="nav-link" type="button">Eventos</button>
+                </nav>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tab1">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo temporibus beatae ipsam asperiores voluptatum ipsa nostrum facilis iste unde rerum? 
+                        Facere esse itaque id, voluptas rem sint architecto qui impedit!
+                    </div>
+                    <div class="tab-pane" id="tab2">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci odio expedita libero nihil sint eos mollitia provident id minima corrupti quidem, 
+                        doloremque impedit rem blanditiis doloribus. Eaque culpa nostrum repellendus?
+                    </div>
+                    <div class="tab-pane" id="tab3">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit mollitia et ullam similique consequuntur nemo numquam repellat eius est iure fugit, 
+                        ducimus alias eos ad quod aperiam, odit sapiente doloribus.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="position: relative">
+            <!--Section Curve-->
+            <div class="custom-shape-divider-bottom-1725922921">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+                </svg>
+            </div>
+        </section>
+        
+        <section id="contato">
+            <div class="container">
+                <h2 class="mt-5 pt-3">CONTATO</h2>
+            </div>
+        </section>
+    </div>
+
+    <!--FOOTER SECTION-->
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted footer-body">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom" id="info">
+        <div class="me-5 d-none d-lg-block">
+            <span>Siga-nos nas redes sociais ou entre em contato:</span>
+        </div>
+        <div id="footer-social-links">
+            <a href="https://www.instagram.com/bearbeef.br/" target="blank" title="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                </svg>
+            </a>
+            <a href="#" target="blank" title="Whatsapp" id="contact-whatsapp">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                    <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                </svg>
+            </a>
+        </div>
+        </section>
+        <!--Logo and text-->
+        <section class="">
+        <div class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4" id="footer-info">
+                    <img src="./images/bearbeef_logo.png" draggable="false" alt="Bear Beef logo" id="footer-logo">
+                    <p class="mt-3">
+                    The Best Beef in Porto™.
+                    </p>
+                </div>
+                <!--Section Column-->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">
+                    MENU
+                    </h6>
+                    <p>
+                        <a href="#home" class="text-reset">Home</a>
+                        </p>
+                    <p>
+                    <a href="#" class="text-reset">Cardápio</a>
+                    </p>
+                    <p>
+                    <a href="https://www.instagram.com/bearbeef.br/" class="text-reset">Instagram</a>
+                    </p>
+                </div>
+                
+                <!--Section Column
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">
+                    Useful links
+                    </h6>
+                    <p>
+                    <a href="#!" class="text-reset">Pricing</a>
+                    </p>
+                    <p>
+                    <a href="#!" class="text-reset">Settings</a>
+                    </p>
+                    <p>
+                    <a href="#!" class="text-reset">Orders</a>
+                    </p>
+                    <p>
+                    <a href="#!" class="text-reset">Help</a>
+                    </p>
+                </div>
+                -->
+                <!--Section Column-->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!--Contact-->
+                    <h6 class="text-uppercase fw-bold mb-4">Contato</h6>
+                    <p class="contact-footer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pin-map" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8z"/>
+                            <path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"/>
+                        </svg>
+                        Porto Gastronômico - Rua Vinte e um de Setembro, 664 - Centro, São Mateus do Sul - PR, 83900-000, Brasil</p>
+                    <p class="contact-footer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-calendar-check" viewBox="0 0 16 16">
+                            <path d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+                        </svg>
+                    De quarta a sexta, das 14:00h às 00:00h. e Sábado e Domingo das 18:00h às 03:00h.
+                    </p>
+                    <p class="contact-footer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                        </svg>
+                        +55 42 00000-0000</p>
+                    <p class="contact-footer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                        <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                    </svg>
+                    +55 42 00000-0000</p>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!-- Copyright -->
+        <div class="text-center p-4" id="footer-foot-note" style="background-color: var(--color-background-footer);">
+        © 2024 Copyright: Bear Beef
+        <span class="text-center" id="footer-developed-by">
+            Website desenvolvido por <a href="https://wa.me/42998640821" target="blank" title="">Jean Justen</a>
+        </span>
+        </div>
+    </footer>
+
+    <!--POP UP-->
+    <!--
+    <div class="modal" id="pop-up-id" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>CUPOM BEAR BEEF</h5>
+                    <button data-bs-dismiss="modal" type="button" class="btn-close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Código do Cupom</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Confirmar</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+    -->
+
+    <script src="Lib/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script> 
+</body>
+</html>

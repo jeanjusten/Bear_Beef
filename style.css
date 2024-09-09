@@ -1,0 +1,301 @@
+/*----------------------------*/
+/*ROOT VARIABLES*/
+/*----------------------------*/
+:root {
+    --color-text: #fafafa;
+    --color-primary: #F15D07;
+    --color-primary-hover: #df631c;
+    --color-body: #1f1b19;
+    --color-background: #1f1b19;
+    --color-scroll: #F15D07;
+    --color-scroll-bg: #2e2e2e;
+    --color-text-sec: #f8f8f8;
+    --color-card-shadow: #f3f3f3;
+
+    --color-plan-value: #26442E;
+    --color-card-hover: #f5f5f5;
+    --color-card-info: #5e5f5e;
+    --color-unavailable: #aaaaaa;
+
+    --color-background-footer: rgba(83, 83, 83, 0.05);
+} 
+
+/*----------------------------*/
+/*RESET SETUP*/
+/*----------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+    scrollbar-width: thin; 
+    scrollbar-color: var(--color-scroll) var(--color-scroll-bg);
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    }
+
+/*----------------------------*/
+/*GENERAL SETUP*/
+/*----------------------------*/
+h1,h2,h3,h4,h5 {
+    font-family: "Fira Sans", system-ui;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--color-text) !important;
+}
+
+body {
+    background-color: var(--color-primary)  !important;
+}
+
+#sobre {
+    background-color: var(--color-primary);
+}
+
+#cardapio {
+    background-color: var(--color-background);
+    min-height: 900px;
+}
+
+#contato {
+    min-height: 800px;
+}
+
+/*----------------------------*/
+/*SECTIONS CURVES*/
+/*----------------------------*/
+.custom-curve-orange {
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+    transform-origin: bottom;
+    bottom: 0px;
+}
+
+.custom-curve-orange2 {
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    background-color: transparent;
+}
+
+.custom-shape-divider-bottom-1725920085 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1725920085 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 73px;
+}
+
+.custom-shape-divider-bottom-1725920085 .shape-fill {
+    fill: var(--color-primary);
+}
+
+.custom-shape-divider-bottom-1725922552 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1725922552 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 66px;
+}
+
+.custom-shape-divider-bottom-1725922552 .shape-fill {
+    fill: #F15D07;
+}
+
+
+
+
+
+
+.custom-shape-divider-bottom-1725922921 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1725922921 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 71px;
+}
+
+.custom-shape-divider-bottom-1725922921 .shape-fill {
+    fill: #F15D07;
+}
+/*----------------------------*/
+/*NAVBAR*/
+/*----------------------------*/
+header {
+    z-index: 10;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: var(--color-background) ;
+}
+
+.navbar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
+}
+
+#claw-logo {
+    max-height: 40px;
+}
+
+.nav-item a {
+    color: var(--color-text);
+}
+
+.nav-link.active {
+    font-weight: bold;
+    background-color: transparent !important;
+    color:var(--color-primary) !important;
+}
+
+.nav-link:hover {
+    color: var(--color-primary-hover) !important;
+}
+
+.nav-link {
+    text-align: center;
+}
+
+.nav-tabs button {
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+.tab-content {
+    color: var(--color-text);
+}
+
+/*----------------------------*/
+/*MAIN SECTION*/
+/*----------------------------*/
+.carousel-caption button {
+    background-color: var(--color-primary) !important;
+    border-color: transparent !important;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.carousel-caption button:hover {
+    background-color: var(--color-primary-hover) !important;
+}
+
+.carousel-caption h1 {
+    transition: 0.5s ease-in-out;
+}
+
+.carousel-caption h1:hover {
+    color: var(--color-primary) !important;
+    cursor: default;
+    transition: 0.5s ease-in-out;
+}
+
+.c-item {
+    height: calc(100vh - 56px);
+}
+
+.c-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.img-claw-main {
+    position: absolute;
+    transform: translate(-38%, -60%) !important;
+    max-height: 150px;
+    z-index: 1 !important;
+}
+
+.carousel-txt {
+    z-index: 2 !important;
+}
+
+.carousel-caption  {
+    align-content: center;
+}
+
+
+
+
+
+
+/*----------------------------*/
+/*FOOTER*/
+/*----------------------------*/
+#footer-info {
+    text-align: center;
+}
+
+#footer-logo {
+    max-height: 100px;
+}
+
+#footer-social-links a svg {
+    text-decoration: none !important;
+}
+
+#footer-social-links a svg {
+    color: var(--color-primary);
+    margin-left: 10px !important;
+}
+
+#footer-social-links a svg:hover {
+    color: var(--color-primary-hover);
+}
+
+#footer-social-links a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+.contact-footer {
+    vertical-align: center !important;
+    align-items: center;
+    align-content: center;
+}
+
+#footer-foot-note {
+    display: flex;
+    font-weight: bold;
+    justify-content: space-around;
+}
+
+#footer-developed-by {
+    font-weight: bold;
+    color: rgb(124, 124, 124);
+}
+
+#footer-developed-by a {
+    color: rgb(107, 107, 107);
+    text-decoration: none;
+}
+
+#footer-developed-by a:hover {
+    color: rgb(54, 54, 54);
+    text-decoration: underline;
+}
