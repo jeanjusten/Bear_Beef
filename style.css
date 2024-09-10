@@ -297,7 +297,7 @@ header {
 
 @media (min-width: 1410px) {
     #container-contact-img p {
-        min-width: 54vw !important;
+        max-width: 50vw !important;
     }
 
     .img-phone {
@@ -380,7 +380,7 @@ header {
 
 @media (max-width: 768px) and (min-width: 700px) {
     #container-contact-img p {
-        max-width: 40vw !important;
+        max-width: 60vw !important;
     }
 
     .bear-beef-logo-contact {
@@ -392,7 +392,7 @@ header {
         position: absolute;
         bottom: 0;
         right: 0;
-        max-height: 320px !important;
+        max-height: 380px !important;
         height: auto !important;
     }
 
@@ -417,21 +417,16 @@ header {
     }
 
     .img-phone {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        max-height: 280px !important;
-        height: auto !important;
-    }
-
-    #container-badges {
-        gap: 10px;
-        z-index: 10 !important;
+        display: none;
     }
 
     .badges {
-        z-index: 5 !important;
+        margin-top: 5px !important;
+        max-height: 40px !important;
+        height: auto;
+        z-index: 5;
     }
+
 }
 
 @media (max-width: 430px) and (min-width: 361px) {
@@ -445,11 +440,7 @@ header {
     }
 
     .img-phone {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        max-height: 250px !important;
-        height: auto !important;
+        display: none;
     }
 
     #bb-stars {
@@ -483,25 +474,17 @@ header {
         display: none;
     }
 
-    #container-badges {
-        gap: 10px;
-        z-index: 10 !important;
-        display: flex !important;
-        flex-direction: column !important;
-        justify-content: center !important;
-    }
-    
-    .badges {
-        margin-top: 5px !important;
-        z-index: 5;
-        height: auto !important;
-        max-height: auto !important;
-    }
-
     #baixe-app {
         margin-top: 10px !important;
         margin-bottom: 0;
         padding-bottom: 0;
+    }
+
+    .badges {
+        margin-top: 5px !important;
+        max-height: 40px !important;
+        height: auto;
+        z-index: 5;
     }
 }
 
@@ -518,6 +501,7 @@ header {
 .badges {
     max-height: 80px;
     margin-top: 5px;
+    max-width: 100%;
 }
 
 /*----------------------------*/
