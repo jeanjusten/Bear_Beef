@@ -35,7 +35,7 @@
                             <a href="#cardapio" class="nav-link">Cardápio</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#contato" class="nav-link">Contato</a>
+                            <a href="#contato" class="nav-link">Pedidos</a>
                         </li>
                     </ul>
                 </nav>
@@ -53,7 +53,6 @@
                     <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-            
             <div class="carousel-inner">
                 <div class="carousel-item active c-item">
                     <img src="./images/fd-02.jpg" draggable="false" alt="Imagem de um prato com carne" class="d-block w-100 c-img" alt="Slide 1">
@@ -103,11 +102,10 @@
                 </div>
             </section>
         </section>
-
         <section id="sobre" class="mt-4">
             <div class="container mb-5">
-                <div class="container d-flex justify-content-center gap-3 section-titles">
-                    <img src="./images/bearbeef_claw_white.png" alt="Logo em ícone de uma garra" draggable="false" class="icon-section-claw mb-4">
+                <div class="container d-flex justify-content-start gap-3 section-titles">
+                    <img src="./images/bearbeef_claw.png" alt="Logo em ícone de uma garra" draggable="false" class="icon-section-claw mb-4">
                     <h2 class="mb-4">SOBRE A BEAR BEEF</h2>
                 </div>
                 <p class="desc-p">
@@ -116,7 +114,6 @@
                     adipisicing elit. Voluptate aliquam voluptatum magni consequuntur repudiandae enim possimus facere adipisci, qui veniam, incidunt, officiis quis 
                     quaerat ratione reiciendis nobis perferendis saepe ipsum.
                 </p>
-
                 <div class="row">
                     <div class="col-sm-12 col-md-6 col-lg-4 pt-3">
                         <div class="card">
@@ -155,7 +152,7 @@
         </section>
 
         <!--Section Cardápio-->
-        <section id="cardapio" style="position:relative">
+        <section id="cardapio" style="position:relative" class="pb-5">
             <!--Section Shape Divider-->
             <div class="custom-shape-divider-top-1725987876">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -163,8 +160,8 @@
                 </svg>
             </div>
             <div class="container pt-5">
-                <div class="container d-flex justify-content-center gap-3 section-titles">
-                    <img src="./images/bearbeef_claw_white.png" alt="Logo em ícone de uma garra" draggable="false" class="icon-section-claw mt-5 mb-4">
+                <div class="container d-flex justify-content-start gap-3 section-titles">
+                    <img src="./images/bearbeef_claw.png" alt="Logo em ícone de uma garra" draggable="false" class="icon-section-claw mt-5 mb-4">
                     <h2 class="mb-4 mt-5">CARDÁPIO</h2>
                 </div>
                 <nav class="nav nav-tabs">
@@ -190,7 +187,8 @@
         </section>
 
         <!--Section Contato-->
-        <section id="contato" style="position: relative">
+        <section id="contato" style="position: relative" class="pb-5">
+            <img src="./images/app_bearbeef.png" alt="Mão segurando um celular com a tela do aplicativo aiqfome da Bear Beef" class="img-phone" draggable="false">
             <!--Section Shape Divider-->
             <div class="custom-shape-divider-top-1725991254">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -198,16 +196,28 @@
                 </svg>
             </div>
             <div class="container pt-5">
-                <div class="container d-flex justify-content-center gap-3 section-titles">
-                    <img src="./images/bearbeef_claw_white.png" alt="Logo em ícone de uma garra" draggable="false" class="icon-section-claw mt-5 mb-4">
-                    <h2 class="mb-4 mt-5">CONTATO</h2>
+                <div class="container d-flex justify-content-start gap-3 section-titles">
+                    <img src="./images/bearbeef_claw.png" alt="Logo em ícone de uma garra" draggable="false" class="icon-section-claw mt-5 mb-4">
+                    <h2 class="mb-4 mt-5">PEDIDOS</h2>
                 </div>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vel debitis eius magnam qui unde repellendus ipsa provident possimus vitae 
-                    eaque dolorem rem molestiae rerum, dicta laudantium deserunt laboriosam. Aspernatur?
-                </p>
-                
+                <div class="container d-block" style="position: relative;" id="container-contact-img">
+                    <p class="order-text">
+                        Bateu aquela fome? Faça o seu pedido através do app e receba seu steak suculento no conforto da sua casa.
+                    </p>
+                    <div class="container">
+                        <img src="./images/bearbeef_logo_squared.png" alt="Logotipo da Bear Beef" class="img-fluid bear-beef-logo-contact" draggable="false" id="bb-stars">
+                    </div>
+                    <p class="mt-1" id="baixe-app">
+                        Baixe agora o App:
+                    </p>
+                    <div class="container d-block mt-0" id="container-badges">
+                        <img src="./images/google_badge.png" alt="Baixe o app no GooglePlay" class="img-fluid badges" draggable="false">
+                        <img src="./images/appstore_badge.png" alt="Baixe o app no GooglePlay" class="imf-fluid badges" draggable="false">
+                    </div>
+                    
+                </div>
             </div>
+
         </section>
     </div>
 
