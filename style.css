@@ -4,13 +4,15 @@
 :root {
     --color-text: #fafafa;
     --color-primary: #F15D07;
-    --color-primary-hover: #df631c;
+    --color-primary-hover: #ff7b2f;
     --color-body: #1f1b19;
-    --color-background: #1f1b19;
+    --color-background: #1a1a1a;
+    --color-background-sec: #111110;
     --color-scroll: #F15D07;
     --color-scroll-bg: #2e2e2e;
-    --color-text-sec: #f8f8f8;
+    --color-text-sec: #1f1b19;
     --color-card-shadow: #f3f3f3;
+    --color-header: #111110;
 
     --color-plan-value: #26442E;
     --color-card-hover: #f5f5f5;
@@ -46,104 +48,103 @@ h1,h2,h3,h4,h5 {
 }
 
 body {
-    background-color: var(--color-primary)  !important;
+    background-color: var(--color-background-sec)  !important;
+}
+
+p {
+    color: var(--color-text);
+}
+
+.desc-p {
+    color: var(--color-text);
 }
 
 #sobre {
-    background-color: var(--color-primary);
+    background-color: var(--color-background-sec);
 }
 
 #cardapio {
     background-color: var(--color-background);
-    min-height: 900px;
 }
 
-#contato {
-    min-height: 800px;
+.icon-section-claw {
+    max-height: 50px;
 }
 
+.section-titles {
+    align-items: center !important;
+}
+
+.section-titles h2 {
+    color: var(--color-primary) !important;
+}
 /*----------------------------*/
-/*SECTIONS CURVES*/
+/*SECTIONS SHAPE DIVIDERS*/
 /*----------------------------*/
-.custom-curve-orange {
-    position: absolute;
-    width: 100%;
-    background-color: transparent;
-    transform-origin: bottom;
-    bottom: 0px;
-}
-
-.custom-curve-orange2 {
-    position: absolute;
-    z-index: 5;
-    width: 100%;
-    background-color: transparent;
-}
-
-.custom-shape-divider-bottom-1725920085 {
+/*Main Section Triangle*/
+.custom-shape-divider-bottom-1725987603 {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
+    transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1725920085 svg {
+.custom-shape-divider-bottom-1725987603 svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 73px;
+    height: 69px;
 }
 
-.custom-shape-divider-bottom-1725920085 .shape-fill {
-    fill: var(--color-primary);
+.custom-shape-divider-bottom-1725987603 .shape-fill {
+    fill: var(--color-background-sec);
 }
 
-.custom-shape-divider-bottom-1725922552 {
+/*Menu Section Triangle*/
+.custom-shape-divider-top-1725987876 {
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
 }
 
-.custom-shape-divider-bottom-1725922552 svg {
+.custom-shape-divider-top-1725987876 svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 66px;
+    height: 58px;
 }
 
-.custom-shape-divider-bottom-1725922552 .shape-fill {
-    fill: #F15D07;
+.custom-shape-divider-top-1725987876 .shape-fill {
+    fill: var(--color-background-sec);
 }
 
-
-
-
-
-
-.custom-shape-divider-bottom-1725922921 {
+/*Contact Section Triangle*/
+.custom-shape-divider-top-1725991254 {
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
 }
 
-.custom-shape-divider-bottom-1725922921 svg {
+.custom-shape-divider-top-1725991254 svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 71px;
+    height: 56px;
 }
 
-.custom-shape-divider-bottom-1725922921 .shape-fill {
-    fill: #F15D07;
+.custom-shape-divider-top-1725991254 .shape-fill {
+    fill: var(--color-background);
 }
+
 /*----------------------------*/
 /*NAVBAR*/
 /*----------------------------*/
@@ -152,7 +153,7 @@ header {
     position: sticky;
     top: 0;
     left: 0;
-    background-color: var(--color-background) ;
+    background-color: var(--color-header) ;
 }
 
 .navbar {
@@ -205,11 +206,15 @@ header {
     background-color: var(--color-primary-hover) !important;
 }
 
-.carousel-caption h1 {
+.carousel-caption h1,
+.carousel-second,
+.carousel-third  {
     transition: 0.5s ease-in-out;
 }
 
-.carousel-caption h1:hover {
+.carousel-caption h1:hover,
+.carousel-second:hover,
+.carousel-third:hover {
     color: var(--color-primary) !important;
     cursor: default;
     transition: 0.5s ease-in-out;
@@ -227,7 +232,7 @@ header {
 
 .img-claw-main {
     position: absolute;
-    transform: translate(-38%, -60%) !important;
+    transform: translate(-45%, -60%) !important;
     max-height: 150px;
     z-index: 1 !important;
 }
@@ -240,20 +245,76 @@ header {
     align-content: center;
 }
 
+/*----------------------------*/
+/*ABOUT SECTION*/
+/*----------------------------*/
+.card-icon {
+    max-height: 80px;
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
 
+.card {
+    background-color: var(--color-background) !important;
+    border-color: transparent !important;
+    outline: none !important;
+    border-radius: none !important;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4), 0 6px 6px rgba(0, 0, 0, 0.3);
+}
 
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-
+.card-body h5, .card-body p {
+    color: var(--color-text) !important;
+}
 
 /*----------------------------*/
 /*FOOTER*/
 /*----------------------------*/
+footer {
+    background-color: blue !important;
+}
+
+#info {
+    background-color: #303030!important;
+    color: var(--color-text);
+    border-bottom: 3px solid !important;
+    border-color: #252424 !important;
+}
+
+#info-container {
+    background-color: #2b2b2b !important;
+    color: var(--color-text);
+    border-bottom: 3px solid !important;
+    border-color: #252424 !important;
+}
+
+#footer-foot-note {
+    background-color: rgb(63, 63, 63) !important;
+}
+
+
+
+.footer-menu1 p a:hover {
+    color: var(--color-primary) !important;
+}
+
 #footer-info {
     text-align: center;
 }
 
 #footer-logo {
     max-height: 100px;
+}
+
+#footer-logo:hover {
+    transform: scale(1.05);
 }
 
 #footer-social-links a svg {
@@ -285,17 +346,22 @@ header {
     justify-content: space-around;
 }
 
+#footer-foot-note span {
+    color: #dfdfdf !important;
+    margin-right: 10px;
+}
+
 #footer-developed-by {
     font-weight: bold;
-    color: rgb(124, 124, 124);
+
 }
 
 #footer-developed-by a {
-    color: rgb(107, 107, 107);
+    color: rgb(233, 233, 233) !important;
     text-decoration: none;
 }
 
 #footer-developed-by a:hover {
-    color: rgb(54, 54, 54);
+    color: var(--color-primary) !important;
     text-decoration: underline;
 }
