@@ -392,11 +392,12 @@ header {
         position: absolute;
         bottom: 0;
         right: 0;
-        max-height: 380px !important;
+        max-height: 360px !important;
         height: auto !important;
     }
 
     #container-badges {
+        display: block !important;
         gap: 10px;
         z-index: 10 !important;
     }
@@ -412,7 +413,7 @@ header {
     }
 
     .bear-beef-logo-contact {
-        max-height: 85px !important;
+        max-height: 185px !important;
         height: auto;
     }
 
@@ -435,7 +436,7 @@ header {
     }
 
     .bear-beef-logo-contact {
-        max-height: 85px !important;
+        max-height: 200px !important;
         height: auto;
     }
 
@@ -494,7 +495,7 @@ header {
 }
 
 #container-badges {
-    justify-content: flex-start;
+    justify-content: center;
     gap: 10px;
 }
 
