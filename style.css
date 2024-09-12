@@ -214,6 +214,15 @@ header {
 /*----------------------------*/
 /*MAIN SECTION*/
 /*----------------------------*/
+#bb-logo-main {
+    max-height: 340px;
+    pointer-events: none;
+}
+
+.carousel-caption {
+    z-index: 5;
+}
+
 .carousel-caption button {
     background-color: var(--color-primary) !important;
     border-color: transparent !important;
@@ -241,7 +250,7 @@ header {
 }
 
 .c-item {
-    height: calc(100svh - 56px) !important;
+    height: calc(100svh - 56px);
 }
 
 .c-img {
@@ -254,11 +263,11 @@ header {
     position: absolute;
     transform: translate(-45%, -60%) !important;
     max-height: 150px;
-    z-index: 1 !important;
+    
 }
 
 .carousel-txt {
-    z-index: 2 !important;
+    z-index: 2;
 }
 
 .carousel-caption  {
