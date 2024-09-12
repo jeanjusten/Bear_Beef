@@ -88,6 +88,29 @@ p {
 /*----------------------------*/
 /*SECTIONS SHAPE DIVIDERS*/
 /*----------------------------*/
+/*Main Section Triangle*/
+.custom-shape-divider-bottom-1725987603 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1725987603 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 69px;
+}
+
+.custom-shape-divider-bottom-1725987603 .shape-fill {
+    fill: var(--color-background-sec);
+}
+
 /*Menu Section Triangle*/
 .custom-shape-divider-top-1725987876 {
     position: absolute;
@@ -207,7 +230,7 @@ header {
 }
 
 .c-item {
-    height: calc(100vh - 56px) !important;
+    height: calc(100svh - 56px) !important;
 }
 
 .c-img {
