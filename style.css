@@ -86,6 +86,17 @@ p {
 }
 
 /*----------------------------*/
+/*POPUP*/
+/*----------------------------*/
+.modal-header h5 {
+    color: black !important;
+}
+
+.modal-body p {
+    color: black;
+}
+
+/*----------------------------*/
 /*SECTIONS SHAPE DIVIDERS*/
 /*----------------------------*/
 /*Main Section Triangle*/
