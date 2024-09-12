@@ -66,6 +66,10 @@ p {
     background-color: var(--color-background);
 }
 
+#contato {
+    background-color: var(--color-background);
+}
+
 .icon-section-claw {
     max-height: 50px;
     filter: saturate(0%);
@@ -143,8 +147,8 @@ p {
     fill: var(--color-background-sec);
 }
 
-/*Contact Section Triangle*/
-.custom-shape-divider-top-1725991254 {
+/*Social Media Section Triangle*/
+.custom-shape-divider-top-1726171823 {
     position: absolute;
     top: 0;
     left: 0;
@@ -153,14 +157,36 @@ p {
     line-height: 0;
 }
 
-.custom-shape-divider-top-1725991254 svg {
+.custom-shape-divider-top-1726171823 svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 56px;
+    height: 42px;
 }
 
-.custom-shape-divider-top-1725991254 .shape-fill {
+.custom-shape-divider-top-1726171823 .shape-fill {
+    fill:  var(--color-background-sec);
+}
+
+/*Menu / Social Media Section Triangle*/
+.custom-shape-divider-top-1726172376 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1726172376 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 42px;
+}
+
+.custom-shape-divider-top-1726172376 .shape-fill {
     fill: var(--color-background);
 }
 
@@ -168,7 +194,7 @@ p {
 /*NAVBAR*/
 /*----------------------------*/
 header {
-    z-index: 10;
+    z-index: 999 !important;
     width: 100%;
     position: fixed;
     top: 0;
@@ -177,6 +203,7 @@ header {
 }
 
 .navbar {
+    z-index: 100 !important;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
 }
 
@@ -277,6 +304,17 @@ header {
 /*----------------------------*/
 /*ABOUT SECTION*/
 /*----------------------------*/
+.founders-instagram {
+    color: white !important;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+    text-decoration: none;
+}
+
+.founders-instagram:hover {
+    text-decoration: underline;
+}
+
 .card-icon {
     max-height: 80px;
     height: auto;
@@ -303,14 +341,120 @@ header {
     color: var(--color-text) !important;
 }
 
+.card-text {
+    min-height: 55px;
+}
+
 /*----------------------------*/
 /*MENU SECTION*/
 /*----------------------------*/
+.video-reels {
+    max-height: 550px;
+}
 
+#qr-code {
+    height: auto;
+    max-height: 250px;
+    width: auto;
+    display: block;
+    margin-left: 0;
+}
+
+@media (max-width: 991px) {
+    #qr-code {
+        margin-left: auto !important;
+    }
+}
+
+.container-tabs {
+    justify-content: space-between !important;
+    gap: 100px;
+}
+
+.container-tabs img {
+    max-width: 50vw; 
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+.price {
+    color: var(--color-primary);
+}
+
+.price a {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.price a:hover {
+    text-decoration: none;
+    color: var(--color-primary-hover);
+    text-decoration: underline;
+}
+/*----------------------------*/
+/*SOCIAL MEDIA SECTION*/
+/*----------------------------*/
+.bb-insta-link {
+    color: var(--color-primary) !important;
+    text-decoration: none;
+}
+
+.bb-insta-link:hover {
+    color: var(--color-primary-hover) !important;
+    text-decoration: underline;
+}
+
+.reels-card {
+    max-width: 80%;
+}
+
+.card-header {
+    transition: 0.5s ease-in-out !important;
+}
+
+.card-header:hover {
+    color: var(--color-primary) !important;
+    transition: 0.5s ease-in-out !important;
+}
+
+.card-anchor {
+    text-decoration: none;
+}
+
+.bb-icon-insta {
+    max-height: 35px;
+    filter: saturate(0%);
+    transition: 0.5s ease-in-out !important;
+}
+
+.bb-icon-insta:hover {
+    max-height: 35px;
+    filter: none;
+}
+
+.card-title {
+    transition: 0.5s ease-in-out !important;
+}
+
+.card-title:hover {
+    color: var(--color-primary) !important;
+}
 
 /*----------------------------*/
 /*CONTACT SECTION*/
 /*----------------------------*/
+#aiqfome-link {
+    text-decoration: none;
+    color: var(--color-primary)
+}
+
+#aiqfome-link:hover {
+    text-decoration: underline;
+    color: var(--color-primary-hover)
+}
+
 #contato {
     height: auto;
     min-height: 500px;
@@ -448,7 +592,6 @@ header {
         height: auto;
         z-index: 5;
     }
-
 }
 
 @media (max-width: 430px) and (min-width: 361px) {
