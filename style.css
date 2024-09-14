@@ -48,6 +48,7 @@ h1,h2,h3,h4,h5 {
 body {
     background-color: var(--color-background-sec)  !important;
     padding-top: 56px;
+    overflow-x: hidden !important;
 }
 
 p {
@@ -64,6 +65,7 @@ p {
 
 #cardapio {
     background-color: var(--color-background);
+    overflow-x: hidden !important;
 }
 
 #contato {
@@ -147,6 +149,27 @@ p {
     fill: var(--color-background-sec);
 }
 
+/*Social Media -> Contact Section Triangle*/
+.custom-shape-divider-top-1726171823 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1726171823 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 42px;
+}
+
+.custom-shape-divider-top-1726171823 .shape-fill {
+    fill:  var(--color-background-sec);
+}
+
 /*Menu -> Social Media Section Triangle*/
 .custom-shape-divider-top-1726172376 {
     position: absolute;
@@ -169,26 +192,6 @@ p {
     fill: var(--color-background);
 }
 
-/*Social Media -> Contact Section Triangle*/
-.custom-shape-divider-top-1726171823 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-top-1726171823 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 42px;
-}
-
-.custom-shape-divider-top-1726171823 .shape-fill {
-    fill:  var(--color-background-sec);
-}
 /*----------------------------*/
 /*NAVBAR*/
 /*----------------------------*/
