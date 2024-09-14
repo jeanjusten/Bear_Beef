@@ -414,7 +414,7 @@ header {
 
 .card-header {
     transition: 0.5s ease-in-out !important;
-    border-bottom: 4px solid var(--color-primary) !important;
+    border-bottom: 4px solid var(--color-background-sec) !important;
 }
 
 .card-header:hover {
